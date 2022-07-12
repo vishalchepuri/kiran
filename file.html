@@ -1,0 +1,12 @@
+<html>
+   <body>
+      <form action = "/upload" method = "POST"
+         enctype = "multipart/form-data">
+            <input type = "text" name = "place">
+        <input type = "text" name = "violation">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+          <button type="button"  onclick="window.location.href='{{ url_for('logout') }}';">logout</button>
+      </form>
+   </body>
+</html>
